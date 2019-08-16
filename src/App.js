@@ -51,7 +51,7 @@ class App extends React.Component{
     data.append('file', this.uploadInput.files[0]);
     // data.append('filename', this.fileName.value);
 
-    fetch('http://0.0.0.0:5000/upload', {
+    fetch('https://traffic-stage.herokuapp.com/upload', {
       method: 'PUT',
       body: data
     }).then((response) => {
@@ -73,7 +73,7 @@ class App extends React.Component{
     if (this.state.results){
       results = <div>
           <h3>Prediction...</h3>
-          {this.state.results[0][0]}
+          {this.state.results[0][0].replace('_', ' ')}
           </div>
     }
     else{
