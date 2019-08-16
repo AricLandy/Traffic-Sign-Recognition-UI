@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Traffic-Sign-Recognition-UI/static/css/main.2cce8147.chunk.css",
+    "main.js": "/Traffic-Sign-Recognition-UI/static/js/main.086b2fbe.chunk.js",
+    "main.js.map": "/Traffic-Sign-Recognition-UI/static/js/main.086b2fbe.chunk.js.map",
+    "runtime~main.js": "/Traffic-Sign-Recognition-UI/static/js/runtime~main.5c74ac27.js",
+    "runtime~main.js.map": "/Traffic-Sign-Recognition-UI/static/js/runtime~main.5c74ac27.js.map",
+    "static/js/2.852bf7d6.chunk.js": "/Traffic-Sign-Recognition-UI/static/js/2.852bf7d6.chunk.js",
+    "static/js/2.852bf7d6.chunk.js.map": "/Traffic-Sign-Recognition-UI/static/js/2.852bf7d6.chunk.js.map",
+    "index.html": "/Traffic-Sign-Recognition-UI/index.html",
+    "precache-manifest.7c29720512ad5ed62f21638dcf6c5303.js": "/Traffic-Sign-Recognition-UI/precache-manifest.7c29720512ad5ed62f21638dcf6c5303.js",
+    "service-worker.js": "/Traffic-Sign-Recognition-UI/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/Traffic-Sign-Recognition-UI/static/css/main.2cce8147.chunk.css.map",
+    "static/media/RR2.png": "/Traffic-Sign-Recognition-UI/static/media/RR2.af0a024f.png",
+    "static/media/do_not_enter.png": "/Traffic-Sign-Recognition-UI/static/media/do_not_enter.ad7dd19e.png",
+    "static/media/park.png": "/Traffic-Sign-Recognition-UI/static/media/park.6314e7a6.png",
+    "static/media/pedestrian_crossing.png": "/Traffic-Sign-Recognition-UI/static/media/pedestrian_crossing.da3ad66d.png",
+    "static/media/yield.png": "/Traffic-Sign-Recognition-UI/static/media/yield.7ad56ca3.png"
+  }
+}
