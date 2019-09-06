@@ -42,9 +42,9 @@ class App extends React.Component{
     data.append('file', this.uploadInput.files[0]);
     // data.append('filename', this.fileName.value);
 
-    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    // const proxyurl = "https://cors-anywhere.herokuapp.com/";
     const url = 'https://traffic-stage.herokuapp.com/upload';
-    fetch(proxyurl + url, {
+    fetch(url, {
       method: 'PUT',
       body: data
     }).then((response) => {
