@@ -33,16 +33,7 @@ class App extends React.Component{
       // var url = reader.readAsDataURL(file);
     }
 
-  // // When a picture is uploaded
-  // onDrop(new_picture) {
-  //     // Set the picture
-  //     this.setState({
-  //         picture: new_picture,
-  //     });
-  //
-  //     console.log(new_picture);
 
-  // }
 
   handleUploadImage(e) {
     e.preventDefault();
@@ -51,7 +42,9 @@ class App extends React.Component{
     data.append('file', this.uploadInput.files[0]);
     // data.append('filename', this.fileName.value);
 
-    fetch('http://0.0.0.0:5000/upload', {
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    const url = 'https://traffic-stage.herokuapp.com/upload';
+    fetch(proxyurl + url, {
       method: 'PUT',
       body: data
     }).then((response) => {
