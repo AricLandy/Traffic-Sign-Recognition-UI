@@ -54,10 +54,10 @@ class App extends React.Component{
         confidence = "Somewhat confident"
       }
       else if (this.state.results[0][1] <= 60000){
-        confidence = "Not that confident (does your image have a white background?)"
+        confidence = "Not that confident (does your image have a white background?) \n Taking a picture directy from mobile is also less accurate"
       }
       else {
-        confidence = "Not confident at all (does your image have a white background?)"
+        confidence = "Not confident at all (does your image have a white background?) \n Taking a picture directy from mobile is also less accurate"
       }
 
 
