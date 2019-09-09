@@ -12,7 +12,7 @@
   margin-top: 30px;
 }
 .upload{
-  font-size: 20px;
+  font-size: 18px;
 }
 .capitalize{
   text-transform:capitalize;
@@ -32,8 +32,8 @@
   max-width: 1000px;
 }
 .example-image{
-  width: 75px;
-  height: 75px;
+  width: 65px;
+  height: 65px;
 }
 /* .button{
   width: 25vw;

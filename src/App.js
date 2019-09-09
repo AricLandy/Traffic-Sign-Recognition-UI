@@ -114,7 +114,7 @@ class App extends React.Component{
         <div className='heading'>What types of images work?</div>
         <div className='paragraph'>
           The image must be one of the eight signs above.
-          The image must also be on a white background, other backgrounds are likely to interfere witht he process.
+          The image must also be on a white background, other backgrounds are likely to interfere with the process.
           PNG images are also more likely to classify correctly, other formats may work, but less likely.
         </div>
 
