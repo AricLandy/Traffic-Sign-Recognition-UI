@@ -44,7 +44,7 @@ class App extends React.Component{
 
 
   render(){
-    let first, confidence, second;
+    let first, confidence;
     if (this.state.results){
 
       if (this.state.results[0][1] <= 20000){
@@ -64,23 +64,14 @@ class App extends React.Component{
       first = <div>
           <div className='heading capitalize'>Prediction...</div>
           <div className='result'>
-            <div className='result-text'>1.&nbsp;{this.state.results[0][0].split('_')
+            <div className='result-text'>{this.state.results[0][0].split('_')
               .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
-              .join(' ')}&nbsp;
+              .join(' ')}
 
             <img className='result-image' src={ require(`./Images/${this.state.results[0][0]}.png`) } alt='Prediction'/>
             </div>
           </div>
-          &nbsp;&nbsp;&nbsp;&nbsp;Confidence: {confidence}
-        </div>
-
-      second = <div className='result'>
-          <div className='result-text'>2.&nbsp;{this.state.results[1][0].split('_')
-            .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
-            .join(' ')}&nbsp;
-
-          <img className='result-image' src={ require(`./Images/${this.state.results[1][0]}.png`) } alt='Prediction'/>
-          </div>
+          Confidence: {confidence}
         </div>
 
     }
@@ -125,8 +116,6 @@ class App extends React.Component{
 
         <div>
           {first}
-          <br />
-          {second}
         </div>
 
         <div className='heading'>Learn more about this project</div>
