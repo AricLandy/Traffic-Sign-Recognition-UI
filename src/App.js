@@ -30,12 +30,10 @@ class App extends React.Component{
     const proxyurl = "https://cors-anywhere.herokuapp.com/";
     const url = 'https://traffic-stage.herokuapp.com/upload';
     // const url = 'http://0.0.0.0:5000/upload'
-    console.log("fetching...", data);
     fetch(proxyurl + url, {
       method: 'PUT',
       body: data
     }).then((response) => {
-      console.log("got response");
       response.json().then((data) => {
         this.setState({
           results: data
@@ -46,7 +44,6 @@ class App extends React.Component{
 
 
   render(){
-    console.log("Render app", this.state.results);
     let first, confidence, second;
     if (this.state.results){
 
@@ -97,50 +94,49 @@ class App extends React.Component{
         <h1>Traffic Sign Recognition</h1>
 
         <div className='heading'>About</div>
-        <div>
+        <div className='paragraph'>
         The original version of this project was written as a final project for Math 214 (Linear Algebra) at University of Michigan.
-        The purpose of this project was to show the power of simple linear algebra calculations. 
+        The purpose of this project was to show the power of simple linear algebra calculations.
         </div>
 
         <div className='heading'>Currently Supports</div>
         <div>
-          <img src={ require('./Images/Stop_Sign.png') } alt='Stop' width='50' height='50'/>
-          <img src={ require('./Images/One_Way.png') } alt='One Way'width='50' height='50'/>
-          <img src={ require('./Images/do_not_enter.png') } alt='Do Not Enter'width='50' height='50'/>
-          <img src={ require('./Images/pedestrian_crossing.png') } alt='Pedestrian'width='50' height='50'/>
-          <img src={ require('./Images/Handicap_Parking.png') } alt='Handicap Parking'width='50' height='50'/>
-          <img src={ require('./Images/Rail_Road.png') } alt='Rail Road'width='50' height='50'/>
-          <img src={ require('./Images/Road_Work_Ahead.png') } alt='Road Work'width='50' height='50'/>
-          <img src={ require('./Images/yield.png') } alt='Yield'width='50' height='50'/>
+          <img src={ require('./Images/Stop_Sign.png') } alt='Stop' className='example-image'/>
+          <img src={ require('./Images/One_Way.png') } alt='One Way' className='example-image'/>
+          <img src={ require('./Images/do_not_enter.png') } alt='Do Not Enter' className='example-image'/>
+          <img src={ require('./Images/pedestrian_crossing.png') } alt='Pedestrian' className='example-image'/>
+          <img src={ require('./Images/Handicap_Parking.png') } alt='Handicap Parking' className='example-image'/>
+          <img src={ require('./Images/Rail_Road.png') } alt='Rail Road' className='example-image'/>
+          <img src={ require('./Images/Road_Work_Ahead.png') } alt='Road Work' className='example-image'/>
+          <img src={ require('./Images/yield.png') } alt='Yield' className='example-image'/>
         </div>
-        <br />
+
         <div className='heading'>What types of images work?</div>
-        <div>
+        <div className='paragraph'>
           The image must be one of the eight signs above.
           The image must also be on a white background, other backgrounds are likely to interfere witht he process.
           PNG images are also more likely to classify correctly, other formats may work, but less likely.
         </div>
-        <br />
+
         <div className='heading'>Upload an image to classify it</div>
         <input onChange={this.change} ref={(ref) => { this.uploadInput = ref; }} type="file" className='upload'/>
         <p></p>
-        <Button onClick={this.handleUploadImage} variant="outlined" size="medium" >Classify</Button>
+        <Button className='classify-button' onClick={this.handleUploadImage} variant="outlined" size="medium" >Classify</Button>
 
-        <br /><br />
         <div>
           {first}
           <br />
           {second}
         </div>
-        <br /><br /><br /><br />
+
         <div className='heading'>Learn more about this project</div>
         <div>
           <a href='https://github.com/AricLandy/Traffic-Sign-Recognition-API' style={{ textDecoration: 'none' }}>
-            <Button variant="outlined" size="medium" >View back end code on Github</Button>
+            <Button className='button' variant="outlined" size="medium" >View back end code on Github</Button>
           </a>
           &nbsp;
           <a href='https://github.com/AricLandy/Traffic-Sign-Recognition-UI' style={{ textDecoration: 'none' }}>
-            <Button variant="outlined" size="medium" >View front end code on Github</Button>
+            <Button className='button' variant="outlined" size="medium" >View front end code on Github</Button>
           </a>
         </div>
 
