@@ -1,5 +1,5 @@
 # Traffic Sign UI
-[Deployment](traffic-sign-recognition.herokuapp.com)
+[Deployment]:traffic-sign-recognition.herokuapp.com
 
 This is a small UI for the traffic sign recognition program
 it is built in react and deployed to Heroku
