@@ -42,6 +42,13 @@ class App extends React.Component{
     });
   }
 
+  componentDidMount(){
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    const url = 'https://traffic-stage.herokuapp.com/';
+    // const url = 'http://0.0.0.0:5000/upload'
+    fetch(proxyurl + url);
+  }
+
 
   render(){
     let first, confidence;
