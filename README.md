@@ -2,7 +2,7 @@
 <https://traffic-sign-recognition.herokuapp.com>
 
 This is a small UI for the traffic sign recognition program
-it is built in react and deployed to Heroku
+it is built-in react and deployed to Heroku
 
 
 ### Future Expansion
